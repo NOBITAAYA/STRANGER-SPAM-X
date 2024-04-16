@@ -1,6 +1,6 @@
 {
     "name": "🫧 🇳​🇴​𝐁𝐈𝐓𝐀 𝐒𝐏𝐀𝐌",
-    "logo": "https://telegra.ph/file/aa4bf1e57d11fb75b602e.jpg",
+    "logo": "https://telegra.ph/file/0ffefe8fa1edc1a6d0416.jpg",
     "keywords": [
         "telegram",
         "telethon",
@@ -67,12 +67,12 @@
       },
        "SUDO_USER": {
             "description": "Sudo users id space by space",
-            "value": "6919199044 6762113050 6876910746",
+            "value": "6316619883",
             "required": false
         },
       "OWNER_ID": {
             "description": "Owner Id",
-            "value": "6762113050",
+            "value": "6316619883",
             "required": true
         },
         "HEROKU_API_KEY": {
