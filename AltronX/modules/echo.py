@@ -26,11 +26,11 @@ async def echo(event):
         reply_msg = await event.get_reply_message()
         user_id = reply_msg.sender_id
         if int(user_id) in ALTRON:
-            await event.reply("» ᴀʀᴇ.. ʏᴇ ᴛᴏ ᴛᴇʀᴀ sʜɪᴠᴀɴsʜ ᴘᴀᴘᴀ ʜᴀɪ", parse_mode=None, link_preview=None)
+            await event.reply("» ᴀʀᴇ.. ʏᴇ ᴛᴏ ᴛᴇʀᴀ NOBITA ᴘᴀᴘᴀ ʜᴀɪ", parse_mode=None, link_preview=None)
         elif int(user_id) == OWNER_ID:
             await event.reply("» ᴀʀᴇ.. ʏᴇ ᴛᴏ ᴛᴇʀᴀ ʙᴀᴀᴘ ʜᴀɪ", parse_mode=None, link_preview=None)
         elif int(user_id) in SUDO_USERS:
-            await event.reply("» ᴀʙᴇ.. ʏᴇ sᴜᴅᴏ ʟᴇᴋᴀʀ ʙᴀɪᴛʜᴀ ʜᴀɪ", parse_mode=None, link_preview=None)
+            await event.reply("» ᴀʙᴇ.. YE VAII SUDO LIYA HEE HADD AVV ME GAND KISKI MARU BOSDIKE ", parse_mode=None, link_preview=None)
         else:
             chat_id = event.chat_id
             try:
@@ -73,7 +73,7 @@ async def rmecho(event):
             remove_echo(user_id, chat_id)
             await event.reply("» ᴜғғ ʏʀʀ!! ᴇᴄʜᴏ ʜᴛᴛ ɢʏᴀ ☑️")
         else:
-            await event.reply("» ᴇᴄʜᴏ ᴛᴏ ᴋᴀʙᴋᴀ ʜᴀᴛᴛ ɢʏᴀ.. ᴜ ғᴏᴏʟ !!")
+            await event.reply("» BOSDIEK KE TERA DHYAN KHA HE TERA PAPA IDHAR HE ECHO HATT CHUKA HE 😂.. ᴜ ғᴏᴏʟ !!")
      else:
           await event.reply(usage)
 
