@@ -20,10 +20,10 @@ from telethon import events
 async def ping(e):
     if e.sender_id in SUDO_USERS:
         start = datetime.now()
-        altron = await e.reply(f"»⚡️𝐖𝐀𝐍𝐃𝐄𝐑𝐈𝐍𝐆⚡️_ᴏᴘ_ʙᴏʟᴛᴀ", parse_mode=None, link_preview=None)
+        altron = await e.reply(f"»⚡️NOBITA PAAPA⚡️_ᴏᴘ_ʙᴏʟᴛᴀ", parse_mode=None, link_preview=None)
         end = datetime.now()
         mp = (end - start).microseconds / 1000
-        await altron.edit(f"_⚡️𝗞𝗜𝗦𝗞𝗜 𝗚𝗔𝗔𝗡𝗗 𝗠𝗔𝗥𝗡𝗜 𝗕𝗢𝗦𝗦⚡️_\n» `{mp} ms`")
+        await altron.edit(f"_𝐁𝐎𝐋𝐎 𝐁𝐎𝐋𝐎 𝐊𝐈𝐒𝐊𝐎 𝐏𝐄𝐋𝐍𝐀 𝐇𝐄 𝐌𝐄 𝐑𝐄𝐀𝐃𝐘 𝐇𝐔 🥀🥵⚡_\n» `{mp} ms`")
 
 
 @MK1.on(events.NewMessage(incoming=True, pattern=r"\%sreboot(?: |$)(.*)" % hl))
@@ -38,7 +38,7 @@ async def ping(e):
 @MK10.on(events.NewMessage(incoming=True, pattern=r"\%sreboot(?: |$)(.*)" % hl))
 async def restart(e):
     if e.sender_id in SUDO_USERS:
-        await e.reply(f"😖ʀᴇʙᴏᴏᴛ ᴋᴀʀᴋᴇ ᴛᴜɴᴇ ᴀᴘɴɪ ᴀᴜᴋᴀᴀᴛ ᴅɪᴋʜᴀ ᴅɪ...!😪😒")
+        await e.reply(f"𝐉𝐀𝐍𝐔 𝐓𝐔𝐌𝐇𝐀𝐑𝐈  𝐘𝐀𝐀𝐃 𝐁𝐀𝐇𝐔𝐓 𝐀𝐓𝐈 𝐇𝐄 𝐔𝐒𝐒 𝐘𝐀𝐀𝐃 𝐌𝐄 𝐌𝐔𝐓𝐇 𝐌𝐀𝐀𝐑 𝐊𝐄 𝐀𝐓𝐀 𝐇𝐔 😂🥀🔥")
         try:
             await MK1.disconnect()
         except Exception:
@@ -99,7 +99,7 @@ sudousers = os.environ.get("SUDO_USER", None)
 @MK10.on(events.NewMessage(incoming=True, pattern=r"\%ssudo(?: |$)(.*)" % hl))
 async def addsudo(event):
     if event.sender_id == OWNER_ID:
-        ok = await event.reply(f"» __ᴇᴋ ɴᴀʏᴀ⚡️ᴡᴀɴᴅᴇʀɪɴɢ's⚡️ʙᴇᴛᴀ ᴀᴅᴅ ʜᴏ ʀʜᴀ...__")
+        ok = await event.reply(f"» __.𝐁𝐀𝐁𝐔 𝐀𝐉𝐉 𝐒𝐄 𝐓𝐔𝐌𝐁𝐇𝐈 𝐍𝐎𝐁𝐈𝐓𝐀 𝐏𝐀𝐏𝐀 𝐊𝐄 𝐀𝐑𝐌𝐘 𝐌𝐄 𝐒𝐀𝐌𝐁𝐇𝐈𝐋 𝐇𝐎 𝐆𝐀𝐘𝐄 𝐇𝐎 https://t.me/MRATYU 🥵⚡..__")
         mks = "SUDO_USER"
         target = ""
         if HEROKU_APP_NAME is not None:
@@ -119,7 +119,7 @@ async def addsudo(event):
             newsudo = f"{sudousers} {target}"
         else:
             newsudo = f"{target}"
-        await ok.edit(f"» **ɴᴇᴡ⚡️ᴡᴀɴᴅᴇʀɪɴɢ's ⚡️ʙᴇᴛᴀ**: `{target}`\n» `ʙᴏᴛ ғɪʀ sᴇ sᴜʀᴜ ʜᴏ ʀʜᴀ...`")
+        await ok.edit(f"» **𝐁𝐀𝐁𝐔 𝐀𝐉𝐉 𝐒𝐄 𝐓𝐔𝐌𝐁𝐇𝐈 𝐍𝐎𝐁𝐈𝐓𝐀 𝐏𝐀𝐏𝐀 𝐊𝐄 𝐀𝐑𝐌𝐘 𝐌𝐄 𝐒𝐀𝐌𝐁𝐇𝐈𝐋 𝐇𝐎 𝐆𝐀𝐘𝐄 𝐇𝐎 https://t.me/MRATYU 🥵⚡**: `{target}`\n» `ʙᴏᴛ ғɪʀ sᴇ sᴜʀᴜ ʜᴏ ʀʜᴀ...`")
         heroku_var[mks] = newsudo   
    
      
