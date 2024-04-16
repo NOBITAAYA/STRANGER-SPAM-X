@@ -27,7 +27,7 @@ async def leave(e):
                   alt = f"» ʏᴏᴜ ᴄᴀɴ'ᴛ ᴅᴏ ᴛʜɪꜱ ʜᴇʀᴇ !!\n\n» {hl}leave <ᴄʜᴀɴɴᴇʟ/ᴄʜᴀᴛ ɪᴅ> \n» {hl}leave : ᴛʏᴘᴇ ɪɴ ᴛʜᴇ ɢʀᴏᴜᴘ, ʙᴏᴛ ᴡɪʟʟ ᴀᴜᴛᴏ ʟᴇᴀᴠᴇ ᴛʜᴀᴛ ɢʀᴏᴜᴘ."
                   await e.reply(alt)
              else:
-                  event = await e.reply("» ʟᴇᴀᴠɪɴɢ...")
+                  event = await e.reply("» NOBITA🦋 ʟᴇᴀᴠɪɴɢ...")
                   try:
                       await event.client(LeaveChannelRequest(int(e.chat_id)))
                   except Exception as e:
